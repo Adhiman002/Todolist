@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        body{
+            background-color: rgba(146, 245, 179, 0.45);
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #enter{
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            background-color: coral;
+            border-radius: 10px;
+            margin-left: 5px;
+            position: absolute;
+            
+
+        }
+        i{
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        input{
+            height: 45px;
+            width: 80%;
+            font-size: 2rem;
+            border-radius: 8px;
+            
+        }
+        ul{
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        li{
+            list-style: none;
+            padding: 10px 20px;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 600;
+            border: 2px solid #025f70;
+            border-radius: 10px;
+            background-color: coral;
+        }
+
+        li>button{
+            font-weight: normal;
+            background: none;
+            border: none;
+            float: right;
+            color: #025f70;
+        }
+        .done{
+            background-color: #51df70;
+            color: #00891e;
+        }
+        .delete{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>To Do List</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="user-input" maxlength="27">
+                <button id="enter"><i class="uil uil-pen"></i></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="listItems col-12">
+                <ul class="col-12 offset-0 col-sm-8 offset-sm-2"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="ToDoList.js"></script>
+</body>
+</html>
